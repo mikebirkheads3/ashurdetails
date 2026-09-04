@@ -74,8 +74,6 @@ export default function Hero() {
           <a href="#">Contact</a>
         </div>
 
-        <span className="hero__logo">CAR DETAILING</span>
-
         <button type="button" className="hero__browse">
           Book It!<span className="hero__arrow">&rarr;</span>
         </button>
@@ -175,13 +173,6 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   color: #fff;
   border-bottom: 2px solid #fff;
   padding-bottom: 3px;
-}
-
-.hero__logo {
-  color: #fff;
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
 }
 
 .hero__browse {
