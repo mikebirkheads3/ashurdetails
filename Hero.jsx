@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 /**
- * VELORA — full-screen luxury car-rental hero.
+ * Ashur Details — full-screen dark luxury car-detailing hero.
  * Self-contained: styles (Google Font, global reset, layout) are injected
  * via the <style> block below. Drop <Hero /> in and render it.
  */
@@ -48,12 +48,12 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="velora-hero">
+    <section className="hero">
       <style>{CSS}</style>
 
       <video
         ref={videoRef}
-        className="velora-hero__video"
+        className="hero__video"
         src={VIDEO_SRC}
         autoPlay
         muted
@@ -62,10 +62,10 @@ export default function Hero() {
         preload="auto"
       />
 
-      <div className="velora-hero__overlay" />
+      <div className="hero__overlay" />
 
-      <nav className="velora-hero__nav">
-        <div className="velora-hero__navlinks">
+      <nav className="hero__nav">
+        <div className="hero__navlinks">
           <a href="#" className="is-active">
             Home
           </a>
@@ -74,23 +74,21 @@ export default function Hero() {
           <a href="#">Contact</a>
         </div>
 
-        <span className="velora-hero__logo">VELORA</span>
-
-        <button type="button" className="velora-hero__browse">
-          Book It!<span className="velora-hero__arrow">&rarr;</span>
+        <button type="button" className="hero__browse">
+          Book It!<span className="hero__arrow">&rarr;</span>
         </button>
       </nav>
 
-      <h1 className="velora-hero__headline">ASHUR DETAILS</h1>
+      <h1 className="hero__headline">ASHUR KING DETAILS</h1>
 
-      <div className="velora-hero__copy">
-        <h2 className="velora-hero__copy-title">Get Your Car Snazzy!</h2>
-        <p className="velora-hero__copy-text">
+      <div className="hero__copy">
+        <h2 className="hero__copy-title">Get Your Car Snazzy!</h2>
+        <p className="hero__copy-text">
           Enjoy a premium detail experience with top pros, seamless booking, and
           honest pricing.
         </p>
-        <button type="button" className="velora-hero__discover">
-          BOOK IT!<span className="velora-hero__arrow">&#8599;</span>
+        <button type="button" className="hero__discover">
+          BOOK IT!<span className="hero__arrow">&#8599;</span>
         </button>
       </div>
     </section>
@@ -103,14 +101,14 @@ const CSS = `
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html, body { overflow-x: hidden; max-width: 100vw; }
 
-.velora-hero, .velora-hero * {
+.hero, .hero * {
   font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-.velora-hero a { text-decoration: none; color: inherit; }
-.velora-hero a:hover { color: #fff; }
+.hero a { text-decoration: none; color: inherit; }
+.hero a:hover { color: #fff; }
 
-.velora-hero {
+.hero {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -120,7 +118,7 @@ html, body { overflow-x: hidden; max-width: 100vw; }
 }
 
 /* ---- Background video ---- */
-.velora-hero__video {
+.hero__video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -132,7 +130,7 @@ html, body { overflow-x: hidden; max-width: 100vw; }
 }
 
 /* ---- Legibility gradient ---- */
-.velora-hero__overlay {
+.hero__overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
@@ -147,7 +145,7 @@ html, body { overflow-x: hidden; max-width: 100vw; }
 }
 
 /* ---- Navbar ---- */
-.velora-hero__nav {
+.hero__nav {
   position: relative;
   z-index: 3;
   display: flex;
@@ -156,32 +154,25 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   padding: 34px 56px;
 }
 
-.velora-hero__navlinks {
+.hero__navlinks {
   display: flex;
   align-items: center;
   gap: 42px;
 }
 
-.velora-hero__navlinks a {
+.hero__navlinks a {
   font-size: 14px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.82);
 }
 
-.velora-hero__navlinks a.is-active {
+.hero__navlinks a.is-active {
   color: #fff;
   border-bottom: 2px solid #fff;
   padding-bottom: 3px;
 }
 
-.velora-hero__logo {
-  color: #fff;
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-}
-
-.velora-hero__browse {
+.hero__browse {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -196,12 +187,12 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   transition: background 0.2s ease;
 }
 
-.velora-hero__browse:hover { background: #e9e9ec; }
+.hero__browse:hover { background: #e9e9ec; }
 
-.velora-hero__arrow { font-size: 15px; }
+.hero__arrow { font-size: 15px; }
 
 /* ---- Giant headline ---- */
-.velora-hero__headline {
+.hero__headline {
   position: absolute;
   top: 92px;
   left: 0;
@@ -221,7 +212,7 @@ html, body { overflow-x: hidden; max-width: 100vw; }
 }
 
 /* ---- Bottom-left copy ---- */
-.velora-hero__copy {
+.hero__copy {
   position: absolute;
   left: 56px;
   bottom: 56px;
@@ -229,7 +220,7 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   max-width: 620px;
 }
 
-.velora-hero__copy-title {
+.hero__copy-title {
   color: #fff;
   font-weight: 600;
   font-size: clamp(38px, 5.8vw, 66px);
@@ -237,7 +228,7 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   letter-spacing: -0.02em;
 }
 
-.velora-hero__copy-text {
+.hero__copy-text {
   color: rgba(255, 255, 255, 0.82);
   font-size: 15px;
   font-weight: 400;
@@ -246,7 +237,7 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   margin-top: 18px;
 }
 
-.velora-hero__discover {
+.hero__discover {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -265,7 +256,7 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.velora-hero__discover:hover {
+.hero__discover:hover {
   background: #fff;
   color: #0a0a0b;
   border-color: #fff;
