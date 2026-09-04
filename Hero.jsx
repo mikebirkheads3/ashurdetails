@@ -81,7 +81,10 @@ export default function Hero() {
         </button>
       </nav>
 
-      <h1 className="hero__headline">ASHUR KING</h1>
+      <h1 className="hero__headline">
+        <span className="hero__headline-main">ASHUR KING</span>
+        <span className="hero__headline-sub">CAR DETAILING</span>
+      </h1>
 
       <div className="hero__copy">
         <h2 className="hero__copy-title">Get Your Car Snazzy!</h2>
@@ -206,8 +209,15 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   top: 92px;
   left: 0;
   width: 100%;
-  text-align: center;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__headline-main {
+  display: block;
   font-weight: 800;
   line-height: 0.9;
   letter-spacing: -0.03em;
@@ -218,6 +228,16 @@ html, body { overflow-x: hidden; max-width: 100vw; }
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+}
+
+.hero__headline-sub {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: clamp(14px, 2.2vw, 26px);
+  letter-spacing: 0.25em;
+  white-space: nowrap;
 }
 
 /* ---- Bottom-left copy ---- */
