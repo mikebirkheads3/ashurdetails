@@ -77,20 +77,20 @@ export default function Hero() {
         <span className="velora-hero__logo">VELORA</span>
 
         <button type="button" className="velora-hero__browse">
-          Browse cars <span className="velora-hero__arrow">&rarr;</span>
+          Book It!<span className="velora-hero__arrow">&rarr;</span>
         </button>
       </nav>
 
-      <h1 className="velora-hero__headline">REGAL DRIVE</h1>
+      <h1 className="velora-hero__headline">ASHUR DETAILS</h1>
 
       <div className="velora-hero__copy">
         <h2 className="velora-hero__copy-title">Get Your Car Snazzy!</h2>
         <p className="velora-hero__copy-text">
-          Enjoy a premium rental experience with exclusive cars, seamless
-          booking, and honest pricing.
+          Enjoy a premium detail experience with top pros, seamless booking, and
+          honest pricing.
         </p>
         <button type="button" className="velora-hero__discover">
-          DISCOVER NOW <span className="velora-hero__arrow">&#8599;</span>
+          BOOK IT!<span className="velora-hero__arrow">&#8599;</span>
         </button>
       </div>
     </section>
