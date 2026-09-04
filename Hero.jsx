@@ -74,7 +74,7 @@ export default function Hero() {
           <a href="#">Contact</a>
         </div>
 
-        <span className="hero__logo">VELORA</span>
+        <span className="hero__logo">CAR DETAILING</span>
 
         <button type="button" className="hero__browse">
           Book It!<span className="hero__arrow">&rarr;</span>
